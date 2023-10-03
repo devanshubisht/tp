@@ -76,7 +76,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
   
 
 * 3a. CodeSphere detects incorrect input format for details.
-
     * 3a1. CodeSphere prompts user to enter details in the correct format.
     * 3a2. User enters details again.
 

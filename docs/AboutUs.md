@@ -13,10 +13,11 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 <img src="images/devanshubisht.png" width="200px">
 
+[[homepage](http://www.comp.nus.edu.sg/~damithch)]
 [[github](https://github.com/devanshubisht)]
 [[portfolio](team/devanshubisht.md)]
 
-* Role: Project Advisor
+- Role: Project Advisor
 
 ### Jane Doe
 
@@ -25,8 +26,8 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](http://github.com/johndoe)]
 [[portfolio](team/johndoe.md)]
 
-* Role: Team Lead
-* Responsibilities: UI
+- Role: Team Lead
+- Responsibilities: UI
 
 ### Johnny Doe
 
@@ -34,8 +35,8 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 
 [[github](http://github.com/johndoe)] [[portfolio](team/johndoe.md)]
 
-* Role: Developer
-* Responsibilities: Data
+- Role: Developer
+- Responsibilities: Data
 
 ### Jean Doe
 
@@ -44,8 +45,8 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](http://github.com/johndoe)]
 [[portfolio](team/johndoe.md)]
 
-* Role: Developer
-* Responsibilities: Dev Ops + Threading
+- Role: Developer
+- Responsibilities: Dev Ops + Threading
 
 ### James Doe
 
@@ -54,5 +55,5 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](http://github.com/johndoe)]
 [[portfolio](team/johndoe.md)]
 
-* Role: Developer
-* Responsibilities: UI
+- Role: Developer
+- Responsibilities: UI
