@@ -14,6 +14,11 @@ public class Remark {
         value = remark;
     }
 
+    /**
+     * Returns the remark value as a String.
+     *
+     * @return The remark value.
+     */
     @Override
     public String toString() {
         return value;
