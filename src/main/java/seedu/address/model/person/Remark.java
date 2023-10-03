@@ -14,6 +14,7 @@ public class Remark {
 
     /**
      * Constructs a {@code Remark}.
+     * 
      * @param remark A valid remark.
      */
     public Remark(String remark) {
@@ -29,8 +30,12 @@ public class Remark {
      */
     @Override
     public boolean equals(Object other) {
-        if (this == other) return true;
-        if (other == null || getClass() != other.getClass()) return false;
+        if (this == other) {
+            return true;
+        }
+        if (other == null || getClass() != other.getClass()) {
+            return false;
+        }
 
         Remark remark = (Remark) other;
         return value.equals(remark.value);
