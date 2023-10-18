@@ -1,0 +1,212 @@
+{
+  "enableSearch": true,
+  "pages": [
+    {
+      "src": "AboutUs.md",
+      "title": "About Us",
+      "headings": {
+        "about-us": "About Us",
+        "project-team": "Project team",
+        "devanshu-bisht": "Devanshu Bisht",
+        "phinehas-tan": "Phinehas Tan",
+        "sun-zihan": "Sun Zihan",
+        "tiong-jjyi": "Tiong Jjyi",
+        "gallen-ong": "Gallen Ong"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "Configuration.md",
+      "title": "Configuration guide",
+      "headings": {
+        "configuration-guide": "Configuration guide"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "DevOps.md",
+      "title": "DevOps guide",
+      "headings": {
+        "devops-guide": "DevOps guide",
+        "build-automation": "Build automation",
+        "continuous-integration-ci": "Continuous integration (CI)",
+        "code-coverage": "Code coverage",
+        "repository-wide-checks": "Repository-wide checks",
+        "making-a-release": "Making a release"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "DeveloperGuide.md",
+      "title": "Developer Guide",
+      "headings": {
+        "codesphere-developer-guide": "CodeSphere Developer Guide",
+        "acknowledgements": "Acknowledgements",
+        "setting-up-getting-started": "Setting up, getting started",
+        "appendix-requirements": "Appendix: Requirements",
+        "product-scope": "Product scope",
+        "user-stories": "User stories",
+        "use-cases": "Use cases",
+        "non-functional-requirements": "Non-Functional Requirements",
+        "glossary": "Glossary"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "Documentation.md",
+      "title": "Documentation guide",
+      "headings": {
+        "documentation-guide": "Documentation Guide"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "Logging.md",
+      "title": "Logging guide",
+      "headings": {
+        "logging-guide": "Logging guide"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "SettingUp.md",
+      "title": "Setting up and getting started",
+      "headings": {
+        "setting-up-and-getting-started": "Setting up and getting started",
+        "setting-up-the-project-in-your-computer": "Setting up the project in your computer",
+        "before-writing-code": "Before writing code"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "Testing.md",
+      "title": "Testing guide",
+      "headings": {
+        "testing-guide": "Testing guide",
+        "running-tests": "Running tests",
+        "types-of-tests": "Types of tests"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "UserGuide.md",
+      "title": "User Guide",
+      "headings": {
+        "codesphere-user-guide": "CodeSphere User Guide",
+        "quick-start": "Quick start",
+        "features": "Features",
+        "adding-a-student-add-coming-soon": "Adding a student : add [coming soon]",
+        "editing-a-student-edit-coming-soon": "Editing a student : edit [coming soon]",
+        "deleting-a-student-delete-coming-soon": "Deleting a student: delete [coming soon]",
+        "tagging-a-student-tag-coming-soon": "Tagging a student tag [coming soon]",
+        "adding-a-remark-for-a-student-remark-coming-soon": "Adding a remark for a student: remark [coming soon]",
+        "viewing-help-help-coming-soon": "Viewing help : help [coming soon]",
+        "exiting-the-program-exit-coming-soon": "Exiting the program : exit [coming soon]",
+        "command-summary": "Command summary"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "index.md",
+      "title": "CodeSphere",
+      "headings": {
+        "codesphere": "CodeSphere",
+        "about-codesphere": "About CodeSphere"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/devanshubisht.md",
+      "title": "Devanshu Bisht's Project Portfolio Page",
+      "headings": {
+        "project-codesphere": "Project: CodeSphere"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/gongg21.md",
+      "title": "Gallen Ong's Project Portfolio Page",
+      "headings": {
+        "project-codesphere": "Project: CodeSphere"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/phiphi-tan.md",
+      "title": "Phi Phi's Project Portfolio Page",
+      "headings": {
+        "project-codesphere": "Project: CodeSphere"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/sunzihan23.md",
+      "title": "Sun Zihan's Project Portfolio Page",
+      "headings": {
+        "project-codesphere": "Project: CodeSphere"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/tiongjjyi.md",
+      "title": "Tiong Jjyi's Project Portfolio Page",
+      "headings": {
+        "project-codesphere": "Project: CodeSphere"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "tutorials/AddRemark.md",
+      "title": "Tutorial: Adding a command",
+      "headings": {
+        "tutorial-adding-a-command": "Tutorial: Adding a command",
+        "create-a-new-remark-command": "Create a new remark command",
+        "hook-remarkcommand-into-the-application": "Hook RemarkCommand into the application",
+        "run-the-application": "Run the application",
+        "change-remarkcommand-to-throw-an-exception": "Change RemarkCommand to throw an exception",
+        "enhancing-remarkcommand": "Enhancing RemarkCommand",
+        "make-the-command-accept-parameters": "Make the command accept parameters",
+        "parse-user-input": "Parse user input",
+        "add-remark-to-the-model": "Add Remark to the model",
+        "add-a-new-remark-class": "Add a new Remark class",
+        "make-use-of-remark": "Make use of Remark",
+        "add-a-placeholder-element-for-remark-to-the-ui": "Add a placeholder element for remark to the UI",
+        "modify-person-to-support-a-remark-field": "Modify Person to support a Remark field",
+        "modify-person": "Modify Person",
+        "update-other-usages-of-person": "Update other usages of Person",
+        "updating-storage": "Updating Storage",
+        "finalizing-the-ui": "Finalizing the UI",
+        "putting-everything-together": "Putting everything together",
+        "update-remarkcommand-and-remarkcommandparser": "Update RemarkCommand and RemarkCommandParser",
+        "writing-tests": "Writing tests",
+        "automatically-generating-tests": "Automatically generating tests",
+        "conclusion": "Conclusion"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "tutorials/RemovingFields.md",
+      "title": "Tutorial: Removing Fields",
+      "headings": {
+        "tutorial-removing-fields": "Tutorial: Removing Fields",
+        "safely-deleting-address": "Safely deleting Address",
+        "assisted-refactoring": "Assisted refactoring",
+        "manual-refactoring": "Manual refactoring",
+        "tidying-up": "Tidying up"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "tutorials/TracingCode.md",
+      "title": "Tutorial: Tracing code",
+      "headings": {
+        "tutorial-tracing-code": "Tutorial: Tracing code",
+        "before-we-start": "Before we start",
+        "setting-a-breakpoint": "Setting a breakpoint",
+        "tracing-the-execution-path": "Tracing the execution path",
+        "conclusion": "Conclusion"
+      },
+      "headingKeywords": {}
+    }
+  ]
+}
