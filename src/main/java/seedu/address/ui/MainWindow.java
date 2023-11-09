@@ -50,11 +50,11 @@ public class MainWindow extends UiPart<Stage> {
     private StackPane commandBoxPlaceholder;
 
     @FXML
-    private MenuItem UgMenuItem;
+    private MenuItem UGMenuItem;
     @FXML
-    private MenuItem DgMenuItem;
+    private MenuItem DGMenuItem;
     @FXML
-    private MenuItem GhMenuItem;
+    private MenuItem GHMenuItem;
 
     @FXML
     private StackPane panelPlaceholder;
@@ -88,9 +88,9 @@ public class MainWindow extends UiPart<Stage> {
     }
 
     private void setAccelerators() {
-        setAccelerator(UgMenuItem, KeyCombination.valueOf("F1"));
-        setAccelerator(DgMenuItem, KeyCombination.valueOf("F2"));
-        setAccelerator(GhMenuItem, KeyCombination.valueOf("F3"));
+        setAccelerator(UGMenuItem, KeyCombination.valueOf("F1"));
+        setAccelerator(DGMenuItem, KeyCombination.valueOf("F2"));
+        setAccelerator(GHMenuItem, KeyCombination.valueOf("F3"));
     }
 
     /**
