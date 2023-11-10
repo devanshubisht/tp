@@ -43,4 +43,4 @@ Given below are my contributions to the project.
 
 * **Community**:
     * Reviewed PRs, and suggested improvements for things like Javadoc style and code quality.
-    * Reported bugs for team CS2103T-T15-4 during PE-D and suggested possible improvements.
+    * Reported bugs for other teams during PE-D and suggested possible improvements. Can be seen [here](https://github.com/devanshubisht/ped).
