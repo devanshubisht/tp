@@ -265,7 +265,7 @@ Commands exclusive to the home page can help you:
 * `add` a new course
 * `edit` the details of an existing course
 * `delete` an existing course
-* `clear` all existing courses in selected course
+* `clear` all existing courses
 * `find` all courses with course name containing the keyword specified
 * `reset` the course list being displayed to its original order
 
@@ -280,7 +280,7 @@ There is also a `select` command that brings you to the course page of the selec
 Adds a course into the list of courses.
 
 **Format:** `add c/COURSE_NAME`
-* `COURSE_NAME`: A valid course in NUS. Each course name should consist of a two or three letter prefix, four digits, and an optional one letter suffix.
+* `COURSE_NAME`: A valid course in NUS. Each `COURSE_NAME` should consist of a two or three letter prefix, four digits, and an optional one letter suffix.
 * Note that the alphabets in the input for `COURSE_NAME` are case-insensitive, and they will all be stored and displayed as uppercase letters. For example, entering `add c/cs1101s` or `add c/CS1101S` will both result in `CS1101S` being added to the course list.
 
 **Examples:**
@@ -300,7 +300,7 @@ Edits the details of an existing course from the list of courses.
 
 **Format:** `edit INDEX c/NEW_COURSE_NAME`
 * `INDEX`: Refers to the index number shown in the displayed course list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of courses currently displayed such that it corresponds to a valid course.
-* `NEW_COURSE_NAME`: A valid course in NUS. Each course name should consist of a two or three letter prefix, four digits, and an optional one letter suffix.
+* `NEW_COURSE_NAME`: A valid course in NUS. Each `NEW_COURSE_NAME` should consist of a two or three letter prefix, four digits, and an optional one letter suffix.
 * The existing `COURSE_NAME` for the course at the specified `INDEX` will be updated to the input `NEW_COURSE_NAME`.
 * Note that the alphabets in the input for `NEW_COURSE_NAME` are case-insensitive, and they will all be stored and displayed as uppercase letters. For example, entering `edit 1 c/cs1101s` or `edit 1 c/CS1101S` will both result in the course at index 1 being updated to `CS1101S`.
 
@@ -409,7 +409,7 @@ Commands exclusive to the course page can help you:
 * `add` a new student
 * `edit` the details of an existing student
 * `delete` an existing student
-* `clear` all existing students
+* `clear` all existing students in the selected course
 * `reset` the student list displayed to its original order
 * `sort` the displayed student list by the specified field
 * `find` students in the course according to the specified field and keywords
@@ -427,7 +427,7 @@ Adds a student to the list of students in the selected course.
 
 **Format:** `add n/NAME e/EMAIL t/TAG`
 * `NAME`: Student names can only contain alphabets and some special characters (, / - ‘). Note that alphabets in the input for `NAME` are case-sensitive.
-* `EMAIL`: NUS undergraduate student’s email, in the format of "exxxxxxx@u.nus.edu". Note that the alphabets in the input for`EMAIL` are case-insensitive, and they will all be stored and displayed as uppercase letters. For example, using `e/e1234567@u.nus.edu` or `e/E1234567@U.NUS.EDU` will both result in `e1234567@u.nus.edu` being added as a student's `EMAIL`.
+* `EMAIL`: NUS undergraduate student’s email, in the format of "exxxxxxx@u.nus.edu". Note that the alphabets in the input for `EMAIL` are case-insensitive, and they will all be stored and displayed as uppercase letters. For example, using `e/e1234567@u.nus.edu` or `e/E1234567@U.NUS.EDU` will both result in `e1234567@u.nus.edu` being added as a student's `EMAIL`.
 * `TAG`: Represents a student's performance level in the selected course. Valid performance tags include `GOOD`, `AVERAGE` and `POOR`. Note that the input for `TAG` is case-insensitive, and they will all be stored and displayed as uppercase letters. For example, using `t/good` or `t/GOOD` will both result in `GOOD` being added as a student's `TAG`.
 
 **Examples:**
@@ -577,7 +577,7 @@ Sorts the list of students you are overseeing in the selected course **by name o
 
 Finds students from the list of students in the selected course that match the given keyword(s) for a specified field.
 
-**Format:** `find [n/NAME] [e/EMAIL] [t/TAG] [pq/QUESTION] [r/REMARK]`
+**Format:** `find [n/NAME] [e/EMAIL] [t/TAG] [pq/PENDING_QUESTION] [r/REMARK]`
 * Details about `NAME`, `EMAIL` and `TAG` can be found in the [`add` command](#adding-a-student--add).
 * Details about `REMARK` can be found in the [`remark` command](#adding-a-remark-for-a-student--remark).
 * Details about `PENDING_QUESTION` can be found in the [`pq` command](#adding-a-pending-question-for-a-student--pq).
@@ -589,7 +589,7 @@ Finds students from the list of students in the selected course that match the g
 
 **Examples:**
 * `find n/John` returns `john` and `John Doe`.
-* `find t/good` Find the student(s) tagged as `GOOD`, and the details of the student(s) will be displayed.
+* `find t/good` finds the student(s) tagged as `GOOD`, and the details of the student(s) will be displayed.
 * `find pq/logic` returns the following result:
 *![Find_Student](images/CommandSuccessScreenshots/FindStudentSuccess.png)*
 
@@ -685,7 +685,7 @@ If your changes to the data file makes it invalid, CodeSphere will overwrite all
 | Action                | Format, Examples                                            |
 |-----------------------|-------------------------------------------------------------|
 | **Help**              | `help`                                                      |
-| **Add Course**        | `add c/COURSENAME`<br/> e.g. `add c/CS1101S`                |
+| **Add Course**        | `add c/COURSE_NAME`<br/> e.g. `add c/CS1101S`                |
 | **Edit Course**       | `edit INDEX c/NEW_COURSE_NAME`<br/> e.g. `edit 1 c/CS1231S` |
 | **Delete Course**     | `delete INDEX` <br/> e.g. `delete 1`                        |
 | **Clear All Courses** | `clear`                                                     |
@@ -704,7 +704,7 @@ If your changes to the data file makes it invalid, CodeSphere will overwrite all
 |------------------------------------------|---------------------------------------------------------------------------------------------|
 | **Help**                                 | `help`                                                                                      |
 | **Add Student**                          | `add n/NAME e/EMAIL t/TAG`<br/>e.g. `add n/Susan Tan e/e0123456@u.nus.edu t/GOOD`           |
-| **Edit Student**                         | `edit INDEX [n/NAME] [e/EMAIL] [t/TAG]`<br/> e.g. `edit 1 n/JOHN`                           |
+| **Edit Student**                         | `edit INDEX [n/NAME] [e/EMAIL] [t/TAG] [r/REMARK] [pq/PENDING_QUESTION]`<br/> e.g. `edit 1 n/JOHN`                           |
 | **Delete Student**                       | `delete INDEX` <br/> e.g. `delete 1`                                                        |
 | **Clear All Students**                   | `clear`                                                                                     |
 | **Reset Student List**                   | `reset`                                                                                     |
