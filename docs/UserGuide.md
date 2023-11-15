@@ -3,17 +3,15 @@ layout: page
 title: User Guide
 ---
 
-CodeSphere is a **desktop contact management app, optimised for use via a Command Line Interface [(CLI)](#glossary)** while still having the benefits of a Graphical User Interface [(GUI)](#glossary).
-It is an app targeted at Teaching Assistants (TAs) in the National University of Singapore (NUS) School of Computing (SoC) to help them better manage administration of their students.
+CodeSphere is a **desktop student management app, that seamlessly integrates the efficiency of a Command Line Interface [(CLI)](#glossary)** with the user-friendly benefits of a Graphical User Interface [(GUI)](#glossary).
+Whether you are a new or experienced Teaching Assistant (TA) at the National University of Singapore’s (NUS) School of Computing (SoC), CodeSphere is here to assist you in managing administrative tasks and tracking your students' progress. 
 
-We understand that as a TA, you might often find it difficult to keep track of all your students' progress and administrative matters.
-And that is why we have developed CodeSphere for you. With CodeSphere, you will have a simple and effect way to manage your students, allowing for customised support to keep tabs on each student.
+With CodeSphere, you can easily:
+ 1. Add course(s) you teach
+ 2. Add students into the course(s) you teach
+ 3. Monitor and address individual needs of students
 
-It doesn't matter if you are a new or experienced TA, with CodeSphere, you can easily:
-* Add a course that you teach.
-* Then, add students into that course.
-
-And to find out more about what else CodeSphere can do for you, continue to read the rest of this all-encompassing user guide.
+Continue to explore this comprehensive user guide to unlock the full potential of CodeSphere and discover how it can help you in your journey as a TA.
 
 <div style="page-break-after: always"></div>
 
