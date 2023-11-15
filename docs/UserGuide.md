@@ -172,6 +172,8 @@ The student list for `CS2101` is currently empty, so let's add a few students in
 
 Upon successfully executing the above commands, your application should now look like this:
 
+<div style="page-break-after: always"></div>
+
 ![Filled CS1101S](images/tutorial/course_students.png)
 
 [_Back to Top_](#table-of-contents)
