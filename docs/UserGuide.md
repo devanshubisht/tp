@@ -466,7 +466,7 @@ Adds a pending question to the specified student from the list of students in th
 **Format:** `pq INDEX pq/PENDING_QUESTION`
 * `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
 * The inputs for `PENDING_QUESTION` will be added to the `PENDING_QUESTION` field for the student at the specified `INDEX`.
-* `PQ`: This section is designated for recording pending questions pertaining to students. Enter any pertinent information, and note that the displayed `pq` will mirror the inputted case format.
+* `PENDING_QUESTION`: This section is designated for recording pending questions pertaining to students. Enter any pertinent information, and note that the displayed `pq` will mirror the inputted case format.
 * Note that the inputs for `PENDING_QUESTION` cannot be empty.
 * Note that the adding of a `PENDING_QUESTION` is not cumulative. If the current `PENDING_QUESTION` field is not empty, using the `pq` command again will overwrite what is in the current `PENDING_QUESTION` field.
 
@@ -479,15 +479,17 @@ Adds a pending question to the specified student from the list of students in th
 
 [_Back to Top_](#table-of-contents)
 
+<div style="page-break-after: always;"></div>
+
 ### Editing a student : `edit`
 
 Edits the details of an existing student from the list of students in the selected course.
 
 **Format:** `edit INDEX [n/NAME] [e/EMAIL] [t/TAG] [r/REMARK] [pq/PENDING_QUESTION]`
 * `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
-* Details about `NAME`, `EMAIL`, `TAG` can be found under the infromation of [`add` command](#adding-a-student--add).
+* Details about `NAME`, `EMAIL` and `TAG` can be found under the infromation of [`add` command](#adding-a-student--add).
 * Details about `REMARK` can be found under the infromation of [`remark` command](#adding-a-remark-for-a-student--remark).
-* Details about `PQ` can be found under the infromation of [`PQ` command](#adding-a-pending-question-for-a-student--pq).
+* Details about `PENDING_QUESTION` can be found under the infromation of [`pq` command](#adding-a-pending-question-for-a-student--pq).
 * All fields after `INDEX` are optional, as indicated by square brackets [ ]. But **at least one** of the optional fields must be provided.
 * Field(s) specified in the command will replace existing field(s) for the student at the specified `INDEX`.
 * The inputs for each field should not contain other valid prefixes. For example, `edit 1 r/new remark e/o`, where the `REMARK` field is intended to be `new remark e/o`, is not allowed because the valid prefix `e/` for `EMAIL` is included in the input for the `REMARK` field.
