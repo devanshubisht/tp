@@ -495,6 +495,8 @@ Edits the details of an existing student from the list of students in the select
 * The inputs for each field should not contain other valid prefixes. For example, `edit 1 r/new remark e/o`, where the `REMARK` field is intended to be `new remark e/o`, is not allowed because the valid prefix `e/` for `EMAIL` is included in the input for the `REMARK` field.
 * Note that when editing tags/remarks/pending questions, the respective existing fields of the student will be removed, meaning that adding of tags/remarks/pending questions is not cumulative.
 
+<div style="page-break-after: always;"></div>
+
 **Examples:**
 * `edit 1 t/good` edits the tag of the first student in the displayed student list to be GOOD.
 * `edit 2 n/Alex Yeoh t/average` edits the name of the second student to be Alex Yeoh and changes the tag to AVERAGE.
