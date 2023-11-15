@@ -53,8 +53,8 @@ Continue to explore this comprehensive user guide to unlock the full potential o
 7. [**Command Summary**](#command-summary)
     * [**Home Page**](#home-page)
     * [**Course Page**](#course-page)
-8. [**Glossary**](#glossary) <div style="page-break-after: always"></div>
-
+8. [**Glossary**](#glossary)
+<div style="page-break-after: always"></div>
 
 ## **User Guide Tips**
 
