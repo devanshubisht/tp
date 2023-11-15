@@ -44,7 +44,7 @@ And to find out more about what else CodeSphere can do for you, continue to read
         * [`reset` Resetting the student list](#resetting-the-student-list--reset)
         * [`sort` Sorting all students](#sorting-all-students--sort)
         * [`find` Finding a student](#finding-a-student--find)
-        * [`list` Finding students with pending questions](#list-all-pending-questions--list)
+        * [`list` Listing students with pending questions](#list-all-pending-questions--list)
         * [`remove` Removing a remark/pending question](#removing-a-remarkpending-question-of-a-student--remove)
         * [`home` Returning to home page](#returning-to-the-home-page--home)
     * [**Miscellaneous**](#miscellaneous)
@@ -73,7 +73,7 @@ And to find out more about what else CodeSphere can do for you, continue to read
 
 | Symbol/Syntax        | Meaning                                                |
 |----------------------|--------------------------------------------------------|
-| `command`            | A command or keyword present,                          |
+| `command`            | A command or keyword present.                          |
 | :exclamation:        | Warning or some important information for you to know. |
 | :bulb:               | Tips from us!                                          |
 | :information_source: | Information that you should take note of.              |
@@ -576,6 +576,9 @@ Sorts the list of students you are overseeing in the selected course **by name o
 Finds students from the list of students in the selected course that match the given keyword(s) for a specified field.
 
 **Format:** `find [n/NAME] [e/EMAIL] [t/TAG] [pq/QUESTION] [r/REMARK]`
+* Details about `NAME`, `EMAIL` and `TAG` can be found under the infromation of [`add` command](#adding-a-student--add).
+* Details about `REMARK` can be found under the infromation of [`remark` command](#adding-a-remark-for-a-student--remark).
+* Details about `PENDING_QUESTION` can be found under the infromation of [`pq` command](#adding-a-pending-question-for-a-student--pq).
 * The search is case-insensitive. For example, hans will match Hans.
 * Only **one** prefix can be specified each time you use the command.
 * The search is dependent on the prefix.
