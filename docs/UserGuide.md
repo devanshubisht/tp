@@ -86,10 +86,10 @@ And to find out more about what else CodeSphere can do for you, continue to read
 ## **Quick Start**
 
 1. Ensure you have Java `11` or above installed in your computer. If you do not have Java `11`, follow [this](https://docs.oracle.com/en/java/javase/11/install/overview-jdk-installation.html#GUID-8677A77F-231A-40F7-98B9-1FD0B48C346A) installation guide.
-2. Download the latest `codesphere.jar` from [here](https://github.com/AY2324S1-CS2103T-W15-4/tp/releases).
+2. Download the latest `CS2103T-W15-4.CodeSphere.jar` from [here](https://github.com/AY2324S1-CS2103T-W15-4/tp/releases).
 3. Copy the file to the folder you want to use as the _home folder_ for your CodeSphere application.
 4. Open your command terminal, then `cd` into the _home folder_.
-5. Use the `java -jar CodeSphere.jar` command to run the CodeSphere application.
+5. Use the `java -jar CS2103T-W15-4.CodeSphere.jar` command to run the CodeSphere application.
 6. The CodeSphere home page, similar to the [GUI](#glossary) displayed below, should appear in a few seconds. Note how the app contains some sample data.
 
    ![Ui](images/HomePage.png)
