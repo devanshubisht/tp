@@ -487,9 +487,9 @@ Edits the details of an existing student from the list of students in the select
 
 **Format:** `edit INDEX [n/NAME] [e/EMAIL] [t/TAG] [r/REMARK] [pq/PENDING_QUESTION]`
 * `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
-* Details about `NAME`, `EMAIL` and `TAG` can be found under the infromation of [`add` command](#adding-a-student--add).
-* Details about `REMARK` can be found under the infromation of [`remark` command](#adding-a-remark-for-a-student--remark).
-* Details about `PENDING_QUESTION` can be found under the infromation of [`pq` command](#adding-a-pending-question-for-a-student--pq).
+* Details about `NAME`, `EMAIL` and `TAG` can be found under the information of [`add` command](#adding-a-student--add).
+* Details about `REMARK` can be found under the information of [`remark` command](#adding-a-remark-for-a-student--remark).
+* Details about `PENDING_QUESTION` can be found under the information of [`pq` command](#adding-a-pending-question-for-a-student--pq).
 * All fields after `INDEX` are optional, as indicated by square brackets [ ]. But **at least one** of the optional fields must be provided.
 * Field(s) specified in the command will replace existing field(s) for the student at the specified `INDEX`.
 * The inputs for each field should not contain other valid prefixes. For example, `edit 1 r/new remark e/o`, where the `REMARK` field is intended to be `new remark e/o`, is not allowed because the valid prefix `e/` for `EMAIL` is included in the input for the `REMARK` field.
@@ -578,9 +578,9 @@ Sorts the list of students you are overseeing in the selected course **by name o
 Finds students from the list of students in the selected course that match the given keyword(s) for a specified field.
 
 **Format:** `find [n/NAME] [e/EMAIL] [t/TAG] [pq/QUESTION] [r/REMARK]`
-* Details about `NAME`, `EMAIL` and `TAG` can be found under the infromation of [`add` command](#adding-a-student--add).
-* Details about `REMARK` can be found under the infromation of [`remark` command](#adding-a-remark-for-a-student--remark).
-* Details about `PENDING_QUESTION` can be found under the infromation of [`pq` command](#adding-a-pending-question-for-a-student--pq).
+* Details about `NAME`, `EMAIL` and `TAG` can be found under the information of [`add` command](#adding-a-student--add).
+* Details about `REMARK` can be found under the information of [`remark` command](#adding-a-remark-for-a-student--remark).
+* Details about `PENDING_QUESTION` can be found under the information of [`pq` command](#adding-a-pending-question-for-a-student--pq).
 * The search is case-insensitive. For example, hans will match Hans.
 * Only **one** prefix can be specified each time you use the command.
 * The search is dependent on the prefix.
