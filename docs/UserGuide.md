@@ -3,13 +3,13 @@ layout: page
 title: User Guide
 ---
 
-CodeSphere is a **desktop student management app, that seamlessly integrates the efficiency of a Command Line Interface [(CLI)](#glossary)** with the user-friendly benefits of a Graphical User Interface [(GUI)](#glossary).
+CodeSphere is the ultimate **desktop student management app, that seamlessly integrates the efficiency of a Command Line Interface [(CLI)](#glossary)** with the user-friendly benefits of a Graphical User Interface [(GUI)](#glossary).
 Whether you are a new or experienced Teaching Assistant (TA) at the National University of Singapore’s (NUS) School of Computing (SoC), CodeSphere is here to assist you in managing administrative tasks and tracking your students' progress. 
 
 With CodeSphere, you can easily:
- 1. Add course(s) you teach
- 2. Add students into the course(s) you teach
- 3. Monitor and address individual needs of students
+ * Add course(s) you teach
+ * Add students into the course(s) you teach
+ * Monitor and address individual needs of students
 
 Continue to explore this comprehensive user guide to unlock the full potential of CodeSphere and discover how it can help you in your journey as a TA.
 
@@ -26,34 +26,34 @@ Continue to explore this comprehensive user guide to unlock the full potential o
         * [`exit` Exiting the program](#exiting-the-program--exit)
     * [**Home Page Commands**](#home-page-commands)
         * [`add` Adding a new course](#adding-a-course--add)
-        * [`edit` Editing the details of a course](#editing-a-course--edit)
         * [`delete` Deleting a course](#deleting-a-course--delete)
-        * [`clear` Clearing all courses](#clearing-all-courses--clear)
-        * [`select` Selecting a course](#selecting-a-course--select)
+        * [`edit` Editing the details of a course](#editing-a-course--edit)
         * [`find` Finding a course](#finding-a-course--find)
         * [`reset` Resetting the course list](#resetting-the-course-list--reset)
+        * [`select` Selecting a course](#selecting-a-course--select)
+        * [`clear` Clearing all courses](#clearing-all-courses--clear)
     * [**Course Page Commands**](#course-page-commands)
         * [`add` Adding a student](#adding-a-student--add)
+        * [`delete` Deleting a student](#deleting-a-student--delete)
         * [`remark` Adding a remark for a student](#adding-a-remark-for-a-student--remark)
         * [`pq` Adding a pending question for a student](#adding-a-pending-question-for-a-student--pq)
+        * [`remove` Removing a remark/pending question](#removing-a-remarkpending-question-of-a-student--remove)
         * [`edit` Editing the details of a student](#editing-a-student--edit)
-        * [`delete` Deleting a student](#deleting-a-student--delete)
-        * [`clear` Clearing all students](#clearing-all-students--clear)
-        * [`reset` Resetting the student list](#resetting-the-student-list--reset)
         * [`sort` Sorting all students](#sorting-all-students--sort)
         * [`find` Finding a student](#finding-a-student--find)
         * [`list` Listing students with pending questions](#list-all-pending-questions--list)
-        * [`remove` Removing a remark/pending question](#removing-a-remarkpending-question-of-a-student--remove)
+        * [`reset` Resetting the student list](#resetting-the-student-list--reset)
         * [`home` Returning to home page](#returning-to-the-home-page--home)
+        * [`clear` Clearing all students](#clearing-all-students--clear)
     * [**Miscellaneous**](#miscellaneous)
         * [Saving the data](#saving-the-data)
         * [Editing the data file](#editing-the-data-file)
 5. [**FAQ**](#faq)
 6. [**Known Issues**](#known-issues)
-7. [**Command summary**](#command-summary)
+7. [**Command Summary**](#command-summary)
     * [**Home Page**](#home-page)
     * [**Course Page**](#course-page)
-8. [**Glossary**](#glossary)
+8. [**Glossary**](#glossary) <div style="page-break-after: always"></div>
 
 
 ## **User Guide Tips**
@@ -97,6 +97,9 @@ Continue to explore this comprehensive user guide to unlock the full potential o
 * `select 1` :  Selects the first course from the list of courses currently displayed on the home page. The [GUI](#glossary) changes to show the list of students in the selected course.
 * `add c/CS1101S` : Adds a course named `CS1101S` to the course list.
 * `edit 1 c/CS1231S` : Updates the course name of the first course displayed with the new course name specified.
+
+<div style="page-break-after: always"></div>
+
 * `delete 3` :
   * If you are currently on the home page, it deletes the third course shown in the current list. 
   * If you are currently on the course page, it deletes the third student shown in the current list.
@@ -260,14 +263,13 @@ Courses are arranged in order of addition, with the first course added at the to
 *![Home Page](images/HomePage.png)*
 
 Commands exclusive to the home page can help you:
-* `add` a new course
-* `edit` the details of an existing course
-* `delete` an existing course
-* `clear` all existing courses
-* `find` all courses with course name containing the keyword specified
-* `reset` the course list being displayed to its original order
-
-There is also a `select` command that brings you to the course page of the selected course.
+* [`add`](#adding-a-course--add) a new course
+* [`delete`](#deleting-a-course--delete) an existing course
+* [`edit`](#editing-a-course--edit) the details of an existing course
+* [`find`](#finding-a-course--find) all courses with course name containing the keyword specified
+* [`reset`](#resetting-the-course-list--reset) the course list being displayed to its original order
+* [`select`](#selecting-a-course--select) command that brings you to the course page of the selected course.
+* [`clear`](#clearing-all-courses--clear) all existing courses
 
 [_Back to Top_](#table-of-contents)
 
@@ -287,25 +289,6 @@ Adds a course into the list of courses.
 * `add c/GEA1000`
 * `add c/st2334` returns the following result:
   *![Add_Course](images/CommandSuccessScreenshots/AddCourseSuccess.png)*
-
-[_Back to Top_](#table-of-contents)
-
-<div style="page-break-after: always"></div>
-
-### Editing a course : `edit`
-
-Edits the details of an existing course from the list of courses.
-
-**Format:** `edit INDEX c/NEW_COURSE_NAME`
-* `INDEX`: Refers to the index number shown in the displayed course list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of courses currently displayed such that it corresponds to a valid course.
-* `NEW_COURSE_NAME`: A valid course in NUS. Each `NEW_COURSE_NAME` should consist of a two or three letter prefix, four digits, and an optional one letter suffix.
-* The existing `COURSE_NAME` for the course at the specified `INDEX` will be updated to the input `NEW_COURSE_NAME`.
-* Note that the alphabets in the input for `NEW_COURSE_NAME` are case-insensitive, and they will all be stored and displayed as uppercase letters. For example, entering `edit 1 c/cs1101s` or `edit 1 c/CS1101S` will both result in the course at index 1 being updated to `CS1101S`.
-
-**Examples:**
-* `edit 1 c/cs1231` edits the `COURSE_NAME` of the first course in the course list to become `CS1231`.
-* `edit 1 c/CS1101` returns the following result:
-  *![Edit_Course](images/CommandSuccessScreenshots/EditCourseSuccess.png)*
 
 [_Back to Top_](#table-of-contents)
 
@@ -332,34 +315,20 @@ Deleting a course will also delete all the students in that course. Ensure that 
 
 <div style="page-break-after: always"></div>
 
-### Clearing all courses : `clear`
+### Editing a course : `edit`
 
-Clears all courses in the displayed list of courses.
+Edits the details of an existing course from the list of courses.
 
-Format: `clear`
-* `clear` returns the following result:
-*![Clear_Course](images/CommandSuccessScreenshots/ClearCourseSuccess.png)*
-
-<div markdown="span" class="alert alert-warning">:exclamation: <b>Caution:</b>
-Clearing all courses will also clear all the students in each course. Ensure that you really wish to clear all data from CodeSphere before using the `clear` course command because this action cannot be undone.
-</div>
-
-[_Back to Top_](#table-of-contents)
-
-<div style="page-break-after: always"></div>
-
-### Selecting a course : `select`
-
-Selects the specified course from the list of courses.
-
-**Format:** `select INDEX`
+**Format:** `edit INDEX c/COURSE_NAME`
 * `INDEX`: Refers to the index number shown in the displayed course list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of courses currently displayed such that it corresponds to a valid course.
-* The course at the specified `INDEX` will be selected. 
+* `COURSE_NAME`: A valid course in NUS. Each `COURSE_NAME` should consist of a two or three letter prefix, four digits, and an optional one letter suffix.
+* The existing `COURSE_NAME` for the course at the specified `INDEX` will be updated to the input `COURSE_NAME`.
+* Note that the alphabets in the input for `COURSE_NAME` are case-insensitive, and they will all be stored and displayed as uppercase letters. For example, entering `edit 1 c/cs1101s` or `edit 1 c/CS1101S` will both result in the course at index 1 being updated to `CS1101S`.
 
-**Example:**
-* `select 2` selects the course at index 2 of the displayed course list.
-* `select 1` returns the following result:
-*![Select](images/CommandSuccessScreenshots/SelectSuccess.png)*
+**Examples:**
+* `edit 1 c/cs1231` edits the `COURSE_NAME` of the first course in the course list to become `CS1231`.
+* `edit 1 c/CS1101` returns the following result:
+  *![Edit_Course](images/CommandSuccessScreenshots/EditCourseSuccess.png)*
 
 [_Back to Top_](#table-of-contents)
 
@@ -387,10 +356,43 @@ Finds courses from the list of courses that match a given a keyword.
 Resets a filtered course list to its original order, where courses are arranged chronologically based on their order of addition, with the first course added at the top of the displayed list.
 
 **Format:** `reset`
-* Recall that `find` will show a filtered course list. `reset` helps to restore the filtered course list back to its original order.
+* Recall that [`find`]((#finding-a-course--find)) will show a filtered course list. `reset` helps to restore the filtered course list back to its original order.
 * `reset` returns the following result:
 *![Reset](images/CommandSuccessScreenshots/ResetSuccess.png)*
 
+
+[_Back to Top_](#table-of-contents)
+
+<div style="page-break-after: always"></div>
+
+### Selecting a course : `select`
+
+Selects the specified course from the list of courses.
+
+**Format:** `select INDEX`
+* `INDEX`: Refers to the index number shown in the displayed course list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of courses currently displayed such that it corresponds to a valid course.
+* The course at the specified `INDEX` will be selected. 
+
+**Example:**
+* `select 2` selects the course at index 2 of the displayed course list.
+* `select 1` returns the following result:
+*![Select](images/CommandSuccessScreenshots/SelectSuccess.png)*
+
+[_Back to Top_](#table-of-contents)
+
+<div style="page-break-after: always"></div>
+
+### Clearing all courses : `clear`
+
+Clears all courses in the displayed list of courses.
+
+Format: `clear`
+* `clear` returns the following result:
+*![Clear_Course](images/CommandSuccessScreenshots/ClearCourseSuccess.png)*
+
+<div markdown="span" class="alert alert-warning">:exclamation: <b>Caution:</b>
+Clearing all courses will also clear all the students in each course. Ensure that you really wish to clear all data from CodeSphere before using the `clear` course command because this action cannot be undone.
+</div>
 
 [_Back to Top_](#table-of-contents)
 
@@ -404,17 +406,18 @@ Students are arranged in order of addition, with the first student added at the 
 **![Course Page](images/course_display.png)**
 
 Commands exclusive to the course page can help you:
-* `add` a new student
-* `edit` the details of an existing student
-* `delete` an existing student
-* `clear` all existing students in the selected course
-* `reset` the student list displayed to its original order
-* `sort` the displayed student list by the specified field
-* `find` students in the course according to the specified field and keywords
-* `list` all existing students with a non-empty pending question field
-* add a `remark` to an existing student
-* add a pending question `pq` to an existing student
-* `remove` a remark or pending question from an existing student
+* [`add`](#adding-a-student--add) a new student
+* [`delete`](#deleting-a-student--delete) an existing student
+* add a [`remark`](#adding-a-remark-for-a-student--remark) to an existing student
+* add a pending question [`pq`](#adding-a-pending-question-for-a-student--pq) to an existing student
+* [`remove`](#removing-a-remarkpending-question-of-a-student--remove) a remark or pending question from an existing student
+* [`edit`](#editing-a-student--edit) the details of an existing student
+* [`sort`](#sorting-all-students--sort) the displayed student list by the specified field
+* [`find`](#finding-a-student--find) students in the course according to the specified field and keywords
+* [`list`](#list-all-pending-questions--list) all existing students with a non-empty pending question field
+* [`reset`](#resetting-the-student-list--reset) the student list displayed to its original order
+* go back to the [`home`](#returning-to-the-home-page--home) page to see all added courses
+* [`clear`] all existing students in the selected course
 
 [_Back to Top_](#table-of-contents)
 
@@ -433,6 +436,23 @@ Adds a student to the list of students in the selected course.
 * `add n/Koh Mei Ling, Mary e/e9739423@u.nus.edu t/AVERAGE`
 * `add n/Ashley-Jane Lim e/E9739153@U.NUS.EDU t/poor` returns the following result:
 *![Add_Student](images/CommandSuccessScreenshots/AddStudentSuccess.png)*
+
+[_Back to Top_](#table-of-contents)
+
+<div style="page-break-after: always"></div>
+
+### Deleting a student : `delete`
+
+Deletes the specified student from the list of students in the selected course.
+
+**Format:** `delete INDEX`
+* `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
+* The student at the specified `INDEX` will be deleted from the student list of the selected course.
+
+**Example:**
+* `delete 2` deletes the student at index 2 of the displayed students list.
+* `delete 1` returns the following result:
+*![Delete_Student](images/CommandSuccessScreenshots/DeleteStudentSuccess.png)*
 
 [_Back to Top_](#table-of-contents)
 
@@ -480,6 +500,26 @@ Adds a pending question to the specified student from the list of students in th
 
 <div style="page-break-after: always;"></div>
 
+### Removing a remark/pending question of a student : `remove`
+
+Removes a remark or pending question from the specified student in the selected course.
+
+**Format:** `remove INDEX [r/] [pq/]`
+* `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
+* The fields after `INDEX` are optional, as indicated by square brackets [ ]. But **at least one** of the optional fields must be provided.
+* `remove` clears the field(s) specified for the student at the specified `INDEX`.
+* Note that nothing should be specified after `r/` or `pq/`.
+
+**Examples:**
+* `remove 2 pq/` removes a pending question of the student at index 2 of the displayed students list.
+* `remove 2 r/` removes a remark of the student at index 2 of the displayed students list.
+* `remove 1 pq/ r/` returns the following result:
+  *![Remove](images/CommandSuccessScreenshots/RemoveSuccess.png)*
+
+[_Back to Top_](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
+
 ### Editing a student : `edit`
 
 Edits the details of an existing student from the list of students in the selected course.
@@ -506,51 +546,6 @@ Edits the details of an existing student from the list of students in the select
 [_Back to Top_](#table-of-contents)
 
 <div style="page-break-after: always"></div>
-
-### Deleting a student : `delete`
-
-Deletes the specified student from the list of students in the selected course.
-
-**Format:** `delete INDEX`
-* `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
-* The student at the specified `INDEX` will be deleted from the student list of the selected course.
-
-**Example:**
-* `delete 2` deletes the student at index 2 of the displayed students list.
-* `delete 1` returns the following result:
-*![Delete_Student](images/CommandSuccessScreenshots/DeleteStudentSuccess.png)*
-
-[_Back to Top_](#table-of-contents)
-
-<div style="page-break-after: always"></div>
-
-### Clearing all students : `clear`
-
-Clears all students in the displayed list of students in the selected course.
-
-**Format:** `clear`
-* `clear` returns the following result:
-*![Clear_Student](images/CommandSuccessScreenshots/ClearStudentListSuccess.png)*
-
-<div markdown="span" class="alert alert-warning">:exclamation: <b>Caution:</b>
-Ensure that you really wish to clear all students from the selected course before executing the `clear` student command because this action cannot be undone.
-</div>
-
-[_Back to Top_](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
-
-### Resetting the student list : `reset`
-
-Resets a filtered or sorted student list to its original order, where students are arranged chronologically based on their order of addition, with the first student added at the top of the displayed list.
-
-**Format:**`reset`
-* `reset` returns the following result:
-*![Reset_Student](images/CommandSuccessScreenshots/ResetStudentSuccess.png)*
-
-[_Back to Top_](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
 
 ### Sorting all students : `sort`
 
@@ -609,21 +604,14 @@ Lists all students in the selected course with non-empty pending question fields
 
 <div style="page-break-after: always;"></div>
 
-### Removing a remark/pending question of a student : `remove`
+### Resetting the student list : `reset`
 
-Removes a remark or pending question from the specified student in the selected course.
+Resets a filtered or sorted student list to its original order, where students are arranged chronologically based on their order of addition, with the first student added at the top of the displayed list.
 
-**Format:** `remove INDEX [r/] [pq/]`
-* `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
-* The fields after `INDEX` are optional, as indicated by square brackets [ ]. But **at least one** of the optional fields must be provided.
-* `remove` clears the field(s) specified for the student at the specified `INDEX`.
-* Note that nothing should be specified after `r/` or `pq/`.
-
-**Examples:**
-* `remove 2 pq/` removes a pending question of the student at index 2 of the displayed students list.
-* `remove 2 r/` removes a remark of the student at index 2 of the displayed students list.
-* `remove 1 pq/ r/` returns the following result:
-  *![Remove](images/CommandSuccessScreenshots/RemoveSuccess.png)*
+**Format:**`reset`
+* Recall that [`find`](#finding-a-student--find), [`sort`](#sorting-all-students--sort) and [`list`](#list-all-pending-questions--list) will alter the order of the the displayed student list for the selected course. `reset` helps to restore a filtered or sorted course list back to its original order.
+* `reset` returns the following result:
+*![Reset_Student](images/CommandSuccessScreenshots/ResetStudentSuccess.png)*
 
 [_Back to Top_](#table-of-contents)
 
@@ -639,6 +627,22 @@ Returns to the [home page](#home-page-commands) that shows the list of courses.
 [_Back to Top_](#table-of-contents)
 
 <div style="page-break-after: always"></div>
+
+### Clearing all students : `clear`
+
+Clears all students in the displayed list of students in the selected course.
+
+**Format:** `clear`
+* `clear` returns the following result:
+*![Clear_Student](images/CommandSuccessScreenshots/ClearStudentListSuccess.png)*
+
+<div markdown="span" class="alert alert-warning">:exclamation: <b>Caution:</b>
+Ensure that you really wish to clear all students from the selected course before executing the `clear` student command because this action cannot be undone.
+</div>
+
+[_Back to Top_](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
 
 ### **Miscellaneous**
 
