@@ -592,10 +592,10 @@ Finds students from the list of students in the selected course that match the g
 
 ### List all pending questions : `list`
 
-Lists all students in the selected course with non-empty [`PENDING_QUESTION`](#adding-a-pending-question-for-a-student--pq) fields.
+Lists all students in the selected course with non-empty pending questions fields.
 
 **Format:** `list pq/`
-* `list` command only can only be used for listing of pending questions.
+* `list` command can only be used for listing of students with non-empty [`PENDING_QUESTION`](#adding-a-pending-question-for-a-student--pq) field .
 * Nothing should be specified after `pq/`.
 * `list pq/` returns the following result:
 *![List_PQ](images/CommandSuccessScreenshots/ListPQSuccess.png)*
