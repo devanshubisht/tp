@@ -36,6 +36,8 @@ And to find out more about what else CodeSphere can do for you, continue to read
         * [`reset` Resetting the course list](#resetting-the-course-list--reset)
     * [**Course Page Commands**](#course-page-commands)
         * [`add` Adding a student](#adding-a-student--add)
+        * [`remark` Adding a remark for a student](#adding-a-remark-for-a-student--remark)
+        * [`pq` Adding a pending question for a student](#adding-a-pending-question-for-a-student--pq)
         * [`edit` Editing the details of a student](#editing-a-student--edit)
         * [`delete` Deleting a student](#deleting-a-student--delete)
         * [`clear` Clearing all students](#clearing-all-students--clear)
@@ -43,8 +45,6 @@ And to find out more about what else CodeSphere can do for you, continue to read
         * [`sort` Sorting all students](#sorting-all-students--sort)
         * [`find` Finding a student](#finding-a-student--find)
         * [`list` Finding students with pending questions](#list-all-pending-questions--list)
-        * [`remark` Adding a remark for a student](#adding-a-remark-for-a-student--remark)
-        * [`pq` Adding a pending question for a student](#adding-a-pending-question-for-a-student--pq)
         * [`remove` Removing a remark/pending question](#removing-a-remarkpending-question-of-a-student--remove)
         * [`home` Returning to home page](#returning-to-the-home-page--home)
     * [**Miscellaneous**](#miscellaneous)
@@ -439,12 +439,53 @@ Adds a student to the list of students in the selected course.
 
 <div style="page-break-after: always"></div>
 
+### Adding a remark for a student : `remark`
+
+Adds a remark to the specified student from the list of students in the selected course.
+
+**Format:** `remark INDEX r/REMARK`
+* `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
+* `REMARK`: This section is designated for recording individualized remarks pertaining to students. Enter any pertinent information, and note that the displayed `remark` will mirror the inputted case format.
+* The inputs for `REMARK` will be added to the `REMARK` field for the student at the specified `INDEX`.
+* Note that the inputs for `REMARK` cannot be empty.
+* Note that the adding of a `REMARK` is not cumulative. If the current `REMARK` field is not empty, using the `remark` command again will overwrite what is in the current `REMARK` field.
+
+**Example:**
+* `remark 2 r/needs more help` adds a remark to the student at index 2 of the displayed students list saying needs more help.
+* `remark 1 r/late submission` returns the following result:
+*![Add_Remark](images/CommandSuccessScreenshots/RemarkSuccess.png)*
+
+[_Back to Top_](#table-of-contents)
+
+<div style="page-break-after: always;"></div>
+
+### Adding a pending question for a student : `pq`
+
+Adds a pending question to the specified student from the list of students in the selected course.
+
+**Format:** `pq INDEX pq/PENDING_QUESTION`
+* `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
+* The inputs for `PENDING_QUESTION` will be added to the `PENDING_QUESTION` field for the student at the specified `INDEX`.
+* `PQ`: This section is designated for recording pending questions pertaining to students. Enter any pertinent information, and note that the displayed `pq` will mirror the inputted case format.
+* Note that the inputs for `PENDING_QUESTION` cannot be empty.
+* Note that the adding of a `PENDING_QUESTION` is not cumulative. If the current `PENDING_QUESTION` field is not empty, using the `pq` command again will overwrite what is in the current `PENDING_QUESTION` field.
+
+**Example:**
+* `pq 2 pq/What is a logic gate?` adds a pending question to the student at index 2 of the displayed student, with the question “What is a logic gate?”. This indicates a need to follow-up with the student.
+* `pq 1 pq/Tut 10 Qns 8` returns the following result:
+*![Add_PQ](images/CommandSuccessScreenshots/PQSuccess.png)*
+
+[_Back to Top_](#table-of-contents)
+
 ### Editing a student : `edit`
 
 Edits the details of an existing student from the list of students in the selected course.
 
 **Format:** `edit INDEX [n/NAME] [e/EMAIL] [t/TAG] [r/REMARK] [pq/PENDING_QUESTION]`
 * `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
+* Details about `NAME`, `EMAIL`, `TAG` can be found under the infromation of [`add` command](#adding-a-student--add).
+* Details about `REMARK` can be found under the infromation of [`remark` command](#adding-a-remark-for-a-student--remark).
+* Details about `PQ` can be found under the infromation of [`PQ` command](#adding-a-pending-question-for-a-student--pq).
 * All fields after `INDEX` are optional, as indicated by square brackets [ ]. But **at least one** of the optional fields must be provided.
 * Field(s) specified in the command will replace existing field(s) for the student at the specified `INDEX`.
 * The inputs for each field should not contain other valid prefixes. For example, `edit 1 r/new remark e/o`, where the `REMARK` field is intended to be `new remark e/o`, is not allowed because the valid prefix `e/` for `EMAIL` is included in the input for the `REMARK` field.
@@ -560,42 +601,6 @@ Lists all students in the selected course with non-empty pending question fields
 [_Back to Top_](#table-of-contents)
 
 <div style="page-break-after: always;"></div>
-
-### Adding a remark for a student : `remark`
-
-Adds a remark to the specified student from the list of students in the selected course.
-
-**Format:** `remark INDEX r/REMARK`
-* `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
-* The inputs for `REMARK` will be added to the `REMARK` field for the student at the specified `INDEX`.
-* Note that the inputs for `REMARK` cannot be empty.
-* Note that the adding of a `REMARK` is not cumulative. If the current `REMARK` field is not empty, using the `remark` command again will overwrite what is in the current `REMARK` field.
-
-**Example:**
-* `remark 2 r/needs more help` adds a remark to the student at index 2 of the displayed students list saying needs more help.
-* `remark 1 r/late submission` returns the following result:
-*![Add_Remark](images/CommandSuccessScreenshots/RemarkSuccess.png)*
-
-[_Back to Top_](#table-of-contents)
-
-<div style="page-break-after: always;"></div>
-
-### Adding a pending question for a student : `pq`
-
-Adds a pending question to the specified student from the list of students in the selected course.
-
-**Format:** `pq INDEX pq/PENDING_QUESTION`
-* `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
-* The inputs for `PENDING_QUESTION` will be added to the `PENDING_QUESTION` field for the student at the specified `INDEX`.
-* Note that the inputs for `PENDING_QUESTION` cannot be empty.
-* Note that the adding of a `PENDING_QUESTION` is not cumulative. If the current `PENDING_QUESTION` field is not empty, using the `pq` command again will overwrite what is in the current `PENDING_QUESTION` field.
-
-**Example:**
-* `pq 2 pq/What is a logic gate?` adds a pending question to the student at index 2 of the displayed student, with the question “What is a logic gate?”. This indicates a need to follow-up with the student.
-* `pq 1 pq/Tut 10 Qns 8` returns the following result:
-*![Add_PQ](images/CommandSuccessScreenshots/PQSuccess.png)*
-
-[_Back to Top_](#table-of-contents)
 
 ### Removing a remark/pending question of a student : `remove`
 
