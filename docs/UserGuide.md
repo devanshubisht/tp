@@ -170,6 +170,8 @@ The student list for `CS2101` is currently empty, so let's add a few students in
 
 >:information_source: Note: When creating students, you must always include their name (`n/`), email (`e/`) and performance tag (`t/`).
 
+Upon successfully executing the above commands, your application should now look like this:
+
 ![Filled CS1101S](images/tutorial/course_students.png)
 
 [_Back to Top_](#table-of-contents)
@@ -301,7 +303,7 @@ Edits the details of an existing course from the list of courses.
 
 **Examples:**
 * `edit 1 c/cs1231` edits the `COURSE_NAME` of the first course in the course list to become `CS1231`.
-* `edit 1 c/CS1101` return the following result:
+* `edit 1 c/CS1101` returns the following result:
   *![Edit_Course](images/CommandSuccessScreenshots/EditCourseSuccess.png)*
 
 [_Back to Top_](#table-of-contents)
@@ -604,8 +606,8 @@ Removes a remark or pending question from the specified student in the selected 
 * Note that nothing should be specified after `r/` or `pq/`.
 
 **Examples:**
-* `remove 2 pq/` Removes a pending question of the student at index 2 of the displayed students list.
-* `remove 2 r/` Removes a remark of the student at index 2 of the displayed students list.
+* `remove 2 pq/` removes a pending question of the student at index 2 of the displayed students list.
+* `remove 2 r/` removes a remark of the student at index 2 of the displayed students list.
 * `remove 1 pq/ r/` returns the following result:
   *![Remove](images/CommandSuccessScreenshots/RemoveSuccess.png)*
 
