@@ -170,9 +170,9 @@ The student list for `CS2101` is currently empty, so let's add a few students in
 
 >:information_source: Note: When creating students, you must always include their name (`n/`), email (`e/`) and performance tag (`t/`).
 
-Upon successfully executing the above commands, your application should now look like this:
-
 <div style="page-break-after: always"></div>
+
+Upon successfully executing the above commands, your application should now look like this:
 
 ![Filled CS1101S](images/tutorial/course_students.png)
 
