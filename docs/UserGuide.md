@@ -63,7 +63,7 @@ Continue to explore this comprehensive user guide to unlock the full potential o
 1. [Quick Start](#quick-start) helps you set up CodeSphere.
 2. [Tutorial for Beginners](#tutorial-for-beginners) walks you through our graphical interface and also guides you on managing a course in CodeSphere.
 3. [Features](#features) helps you understand how all the features work.
-4. [FAQ](#faq) answers the most common questions from our users. If you have questions for us, this section might prove extremely useful.
+4. [FAQ](#faq) answers the most common questions from our users.
 5. [Command Summary](#command-summary) provides a summarised list of our features for your easy reference.
 6. [Glossary](#glossary) explains some of the more complicated terms we used in the guide.
 7. [_Back to Top_](#table-of-contents) provides you with a quick shortcut to return to the table of contents.
@@ -367,7 +367,7 @@ Resets a filtered course list to its original order, where courses are arranged 
 
 ### Selecting a course : `select`
 
-Selects the specified course from the list of courses.
+Selects the specified course from the list of courses to enter its [course page](#course-page-commands).
 
 **Format:** `select INDEX`
 * `INDEX`: Refers to the index number shown in the displayed course list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of courses currently displayed such that it corresponds to a valid course.
@@ -669,6 +669,18 @@ If your changes to the data file makes it invalid, CodeSphere will overwrite all
 **Q**: How do I transfer my data to another Computer?
 
 **A**: Install the app in the other computer and overwrite the empty data file it creates with the file that contains the data of your previous CodeSphere home folder.
+
+**Q**: When and why does CodeSphere use sample data?
+
+**A**: CodeSphere uses sample data when the application is first launched. The purpose of the sample data is to let the new user experiment with the data while getting familiar with CodeSphere. If you wish to start using CodeSphere fresh from the start, you could use the [`clear`](#clearing-all-courses--clear) command to clear all the sample data.
+
+**Q**: Is my data secure?
+
+**A**: Yes, your data is stored locally in your computer and is not accessible by anyone else.
+
+**Q**: Will I lose my data when I exit the app?
+
+**A**: No you will not. The data is stored on your computer and can still be displayed after exiting the app.
 
 ## **Known Issues**
 
