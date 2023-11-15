@@ -417,7 +417,7 @@ Commands exclusive to the course page can help you:
 * [`list`](#list-all-pending-questions--list) all existing students with a non-empty pending question field
 * [`reset`](#resetting-the-student-list--reset) the student list displayed to its original order
 * go back to the [`home`](#returning-to-the-home-page--home) page to see all added courses
-* [`clear`] all existing students in the selected course
+* [`clear`](#clearing-all-students--clear) all existing students in the selected course
 
 [_Back to Top_](#table-of-contents)
 
