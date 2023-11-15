@@ -448,7 +448,7 @@ Adds a remark to the specified student from the list of students in the selected
 * `REMARK`: This section is designated for recording individualized remarks pertaining to students. Enter any pertinent information, and note that the displayed `remark` will mirror the inputted case format.
 * The inputs for `REMARK` will be added to the `REMARK` field for the student at the specified `INDEX`.
 * Note that the inputs for `REMARK` cannot be empty.
-* Note that the adding of a `REMARK` is not cumulative. If the current `REMARK` field is not empty, using the `remark` command again will overwrite what is in the current `REMARK` field.
+* Note that adding a `REMARK` is not cumulative. Using the 'remark' command again will overwrite the existing content in the current `REMARK` field.
 
 **Example:**
 * `remark 2 r/needs more help` adds a remark to the student at index 2 of the displayed students list saying needs more help.
@@ -469,6 +469,8 @@ Adds a pending question to the specified student from the list of students in th
 * `PQ`: This section is designated for recording pending questions pertaining to students. Enter any pertinent information, and note that the displayed `pq` will mirror the inputted case format.
 * Note that the inputs for `PENDING_QUESTION` cannot be empty.
 * Note that the adding of a `PENDING_QUESTION` is not cumulative. If the current `PENDING_QUESTION` field is not empty, using the `pq` command again will overwrite what is in the current `PENDING_QUESTION` field.
+
+<div style="page-break-after: always;"></div>
 
 **Example:**
 * `pq 2 pq/What is a logic gate?` adds a pending question to the student at index 2 of the displayed student, with the question “What is a logic gate?”. This indicates a need to follow-up with the student.
