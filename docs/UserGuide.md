@@ -427,7 +427,7 @@ Adds a student to the list of students in the selected course.
 
 **Format:** `add n/NAME e/EMAIL t/TAG`
 * `NAME`: Student names can only contain alphabets and some special characters (, / - ‘). Note that alphabets in the input for `NAME` are case-sensitive.
-* `EMAIL`: NUS undergraduate student’s email, in the format of "exxxxxxx@u.nus.edu". Note that the alphabets in the input for `EMAIL` are case-insensitive, and they will all be stored and displayed as uppercase letters. For example, using `e/e1234567@u.nus.edu` or `e/E1234567@U.NUS.EDU` will both result in `e1234567@u.nus.edu` being added as a student's `EMAIL`.
+* `EMAIL`: NUS undergraduate student’s email, in the format of "exxxxxxx@u.nus.edu". Note that the alphabets in the input for `EMAIL` are case-insensitive, and they will all be stored and displayed as lowercase letters. For example, using `e/e1234567@u.nus.edu` or `e/E1234567@U.NUS.EDU` will both result in `e1234567@u.nus.edu` being added as a student's `EMAIL`.
 * `TAG`: Represents a student's performance level in the selected course. Valid performance tags include `GOOD`, `AVERAGE` and `POOR`. Note that the input for `TAG` is case-insensitive, and they will all be stored and displayed as uppercase letters. For example, using `t/good` or `t/GOOD` will both result in `GOOD` being added as a student's `TAG`.
 
 **Examples:**
