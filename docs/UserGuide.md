@@ -690,7 +690,7 @@ If your changes to the data file makes it invalid, CodeSphere will overwrite all
 | **Delete Student**                       | `delete INDEX` <br/> e.g. `delete 1`                                                        |
 | **Clear All Students**                   | `clear`                                                                                     |
 | **Reset Student List**                   | `reset`                                                                                     |
-| **Sort Students**                        | `sort s/SORT_CRITERIA` <br/> e.g. `sort s/name`                                             |                                                                                        |
+| **Sort Students**                        | `sort s/SORT_CRITERIA` <br/> e.g. `sort s/name`                                             |
 | **Find Students**                        | `find [n/NAME] [e/EMAIL] [t/TAG] [pq/PENDING_QUESTION] [r/REMARK]` <br/> e.g. `find n/John` |
 | **List Students with Pending Questions** | `list pq/`                                                                                  |
 | **Add Remark**                           | `remark INDEX r/REMARK`<br/>e.g. `remark 1 r/needs more help`                               |
