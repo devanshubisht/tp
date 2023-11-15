@@ -445,10 +445,10 @@ Adds a remark to the specified student from the list of students in the selected
 
 **Format:** `remark INDEX r/REMARK`
 * `INDEX`: Refers to the index number shown in the displayed student list. It must be a positive integer (1, 2, 3, ...), and it should fall within the range of students currently displayed such that it corresponds to a valid student.
-* `REMARK`: This section is designated for recording individualized remarks pertaining to students. Enter any pertinent information, and note that the displayed `remark` will mirror the inputted case format.
+* `REMARK`: This section is designated for recording individualized remarks pertaining to students. Enter any pertinent information, and note that the displayed `REMARK` will mirror the inputted case format.
 * The inputs for `REMARK` will be added to the `REMARK` field for the student at the specified `INDEX`.
 * Note that the inputs for `REMARK` cannot be empty.
-* Note that adding a `REMARK` is not cumulative. Using the 'remark' command again will overwrite the existing content in the current `REMARK` field.
+* Note that adding a `REMARK` is not cumulative. Using the `remark` command again will overwrite the existing content in the current `REMARK` field.
 
 **Example:**
 * `remark 2 r/needs more help` adds a remark to the student at index 2 of the displayed students list saying needs more help.
