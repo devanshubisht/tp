@@ -268,7 +268,7 @@ Commands exclusive to the home page can help you:
 * [`edit`](#editing-a-course--edit) the details of an existing course
 * [`find`](#finding-a-course--find) all courses with course name containing the keyword specified
 * [`reset`](#resetting-the-course-list--reset) the course list being displayed to its original order
-* [`select`](#selecting-a-course--select) command that brings you to the course page of the selected course.
+* [`select`](#selecting-a-course--select) a course and bring you to its page
 * [`clear`](#clearing-all-courses--clear) all existing courses
 
 [_Back to Top_](#table-of-contents)
@@ -592,7 +592,7 @@ Finds students from the list of students in the selected course that match the g
 
 ### List all pending questions : `list`
 
-Lists all students in the selected course with non-empty pending question fields.
+Lists all students in the selected course with non-empty [`PENDING_QUESTION`](#adding-a-pending-question-for-a-student--pq) fields.
 
 **Format:** `list pq/`
 * `list` command only can only be used for listing of pending questions.
