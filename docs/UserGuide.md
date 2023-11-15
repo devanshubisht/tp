@@ -17,7 +17,7 @@ And to find out more about what else CodeSphere can do for you, continue to read
 
 <div style="page-break-after: always"></div>
 
-## Table of Contents
+## **Table of Contents**
 1. [**User Guide Tips**](#user-guide-tips)
 2. [**Quick Start**](#quick-start)
 3. [**Tutorial for Beginners**](#tutorial-for-beginners)
@@ -56,6 +56,7 @@ And to find out more about what else CodeSphere can do for you, continue to read
     * [**Home Page**](#home-page)
     * [**Course Page**](#course-page)
 8. [**Glossary**](#glossary)
+
 
 ## **User Guide Tips**
 
@@ -264,7 +265,7 @@ Commands exclusive to the home page can help you:
 * `add` a new course
 * `edit` the details of an existing course
 * `delete` an existing course
-* `clear` all existing courses
+* `clear` all existing courses in selected course
 * `find` all courses with course name containing the keyword specified
 * `reset` the course list being displayed to its original order
 
@@ -564,7 +565,6 @@ Sorts the list of students you are overseeing in the selected course **by name o
 * `SORT_CRITERIA` of `TAG` sorts the students list by performance tags and displays students with `GOOD` tags top of the list.
 
 **Examples:**
-* `sort s/tag` sorts the student list by tag.
 * `sort s/NAME` sorts the student list by name.
 * `sort s/tag` returns the following result:
 *![Sort_Student](images/CommandSuccessScreenshots/SortSuccess.png)*
