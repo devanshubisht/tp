@@ -581,7 +581,7 @@ Finds students from the list of students in the selected course that match the g
 * Details about `NAME`, `EMAIL` and `TAG` can be found in the [`add` command](#adding-a-student--add).
 * Details about `REMARK` can be found in the [`remark` command](#adding-a-remark-for-a-student--remark).
 * Details about `PENDING_QUESTION` can be found in the [`pq` command](#adding-a-pending-question-for-a-student--pq).
-* The search is case-insensitive. For example, hans will match Hans.
+* The search is case-insensitive. For example, `hans` will match `Hans`.
 * Only **one** prefix can be specified each time you use the command.
 * The search is dependent on the prefix.
 * The order of the keywords does not matter. For example, `Hans Bo` will match `Bo Hans`.
