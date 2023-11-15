@@ -688,7 +688,7 @@ If your changes to the data file makes it invalid, CodeSphere will overwrite all
 |-----------------------|-------------------------------------------------------------|
 | **Help**              | `help`                                                      |
 | **Add Course**        | `add c/COURSE_NAME`<br/> e.g. `add c/CS1101S`                |
-| **Edit Course**       | `edit INDEX c/NEW_COURSE_NAME`<br/> e.g. `edit 1 c/CS1231S` |
+| **Edit Course**       | `edit INDEX c/COURSE_NAME`<br/> e.g. `edit 1 c/CS1231S` |
 | **Delete Course**     | `delete INDEX` <br/> e.g. `delete 1`                        |
 | **Clear All Courses** | `clear`                                                     |
 | **Select Course**     | `select INDEX` <br/> e.g. `select 1`                        |
