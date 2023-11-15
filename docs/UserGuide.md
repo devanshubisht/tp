@@ -356,7 +356,7 @@ Finds courses from the list of courses that match a given a keyword.
 Resets a filtered course list to its original order, where courses are arranged chronologically based on their order of addition, with the first course added at the top of the displayed list.
 
 **Format:** `reset`
-* Recall that [`find`]((#finding-a-course--find)) will show a filtered course list. `reset` helps to restore the filtered course list back to its original order.
+* Recall that [`find`](#finding-a-course--find) will show a filtered course list. `reset` helps to restore the filtered course list back to its original order.
 * `reset` returns the following result:
 *![Reset](images/CommandSuccessScreenshots/ResetSuccess.png)*
 
